@@ -1,0 +1,23 @@
+@import url('./Base.css');
+
+.photoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card-tall {
+    grid-row: span 2/ auto;
+}
+.card-taller {
+    grid-row: span 3/ auto;
+}
+.card-wide {
+    grid-column: span 2/ auto;
+}
+
+@media screen and (max-width: 600px) {
+    .photoGrid {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
